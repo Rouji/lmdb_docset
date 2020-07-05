@@ -1,0 +1,19 @@
+WHAT IS THIS
+Script for building an LMDB docset for Dash, innit.
+
+PREREQUISITES
+git
+jq
+bash
+GNU grep/sed/tar
+
+BUILDING THE DOCSET
+Pretty much just run ./make_docset.sh and it'll generate LMDB.tgz, docset.json and a README.md inside build/, which should be all you need according to https://github.com/Kapeli/Dash-User-Contributions#contribute-a-new-docset and https://github.com/Kapeli/Dash-User-Contributions/tree/master/Sample_Docset
+
+Env vars you can set, so the metadata makes a bit more sense:
+LMDB_DOCSET_AUTHOR: Your name or pseudonym or whatever
+LMDB_DOCSET_AUTHOR_LINK: Link to where people can scream at you
+LMDB_DOCSET_SCRIPT_LINK: Link to this thing (presumably on github or something)
+
+The script checks the version inside build/LMDB.tgz against the current LMDB version and only rebuilds if they don't match.
+It should only exit with 0 if it built a new .tgz. Could be useful for chaining stuff after it.
