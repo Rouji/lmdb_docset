@@ -1,0 +1,6 @@
+[submodule "doxygen2docset"]
+	path = doxygen2docset
+	url = https://github.com/chinmaygarde/doxygen2docset.git
+[submodule "lmdb"]
+	path = lmdb
+	url = https://github.com/LMDB/lmdb.git
