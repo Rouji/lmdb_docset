@@ -52,6 +52,8 @@ cat <<EOF >LMDB.docset/Contents/Info.plist
 <string>LMDB</string>
 <key>DocSetPlatformFamily</key>
 <string>lmdb</string>
+<key>isDashDocset</key>
+<true/>
 </dict>
 </plist>
 EOF
